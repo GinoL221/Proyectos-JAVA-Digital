@@ -12,8 +12,16 @@ public abstract class BankAccount {
     }
 
     public void withdraw(Double amount) {
-        if (balance >= amount) {
+        if (canWithdraw(amount)) {
             balance -= amount;
         }
+    }
+
+    public Double getBalance() {
+        return balance;
+    }
+
+    public Boolean canWithdraw(Double amount) {
+        return balance >= amount;
     }
 }

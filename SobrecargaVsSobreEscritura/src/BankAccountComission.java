@@ -1,19 +1,18 @@
 public class BankAccountComission extends BankAccount {
-    private Double comission;
+    private Double commission;
 
-    public BankAccountComission(String accountOwner, Double comission) {
+    public BankAccountComission(String accountOwner, Double commission) {
         super(accountOwner);
-        this.comission = comission;
+        this.commission = commission;
     }
 
     @Override
     public void withdraw(Double amount) {
-        Double realWhitdraw = amount - (amount * comission);
-        super.withdraw(realWhitdraw);
+        Double realWithdraw = amount + (amount * commission);
+        super.withdraw(realWithdraw);
     }
 
-    @Override
-    public void deposit(Double amount) {
-        super.deposit(amount);
+    public void deposit(Check check) {
+        super.deposit(check.getAmount());
     }
 }
