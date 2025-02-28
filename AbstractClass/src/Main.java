@@ -6,6 +6,5 @@ public class Main {
 
         System.out.println(circle.calculateArea());
         System.out.println(square.calculateArea());
-
     }
 }
