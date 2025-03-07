@@ -7,5 +7,4 @@ public abstract class GeometricFigure {
     }
 
     public abstract Double calculateArea();
-
 }
