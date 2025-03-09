@@ -9,7 +9,7 @@ public class BurgerJoint {
         productCart = new ArrayList<>();
     }
 
-    public addProduct(Product product){
+    public void addProduct(Product product){
         productCart.add(product);
     }
 

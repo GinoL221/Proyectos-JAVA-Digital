@@ -16,6 +16,8 @@ public class ProductComposite extends Product{
         productList.add(product);
     }
 
+
+
     @Override
     public Double calculatePrice() {
         Double totalPrice = 0.0;
