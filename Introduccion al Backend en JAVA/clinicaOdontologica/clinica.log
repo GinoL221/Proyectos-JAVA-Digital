@@ -1,0 +1,15 @@
+[2025-04-09 18:39:11] [main] [WARN ] [ClinicaOdontologica:85] Se actualizó el nombre del dentista con ID = 1 a Roberto Gabriel
+[2025-04-09 18:39:11] [main] [WARN ] [ClinicaOdontologica:100] AVISO: Se borró el dentista con ID = 2
+[2025-04-09 18:39:11] [main] [INFO ] [ClinicaOdontologica:129] Los datos actualizados son:  - ID: 1 - Matrícula: 1357 - Nombre: Roberto Gabriel - Apellido: Pérez
+           ---
+[2025-04-09 18:39:11] [main] [INFO ] [ClinicaOdontologica:157] La consulta final luego de borrar el registro con ID = 2 es: 1 son:  - ID: 1 - Matrícula: 1357 - Nombre: Roberto Gabriel - Apellido: Pérez
+           ---
+[2025-04-09 18:39:57] [main] [WARN ] [ClinicaOdontologica:84] Se actualizó el nombre del dentista con ID = 1 a Roberto Gabriel
+[2025-04-09 18:39:57] [main] [WARN ] [ClinicaOdontologica:99] AVISO: Se borró el dentista con ID = 2
+[2025-04-09 18:39:57] [main] [INFO ] [ClinicaOdontologica:127] Los datos actualizados son:  - ID: 1 - Matrícula: 1357 - Nombre: Roberto Gabriel - Apellido: Pérez
+[2025-04-09 18:39:57] [main] [INFO ] [ClinicaOdontologica:153] La consulta final luego de borrar el registro con ID = 2 es: 1 son:  - ID: 1 - Matrícula: 1357 - Nombre: Roberto Gabriel - Apellido: Pérez
+[2025-04-09 18:41:45] [main] [WARN ] [ClinicaOdontologica:84] Se actualizó el nombre del dentista con ID = 1 a Roberto Gabriel
+[2025-04-09 18:41:45] [main] [WARN ] [ClinicaOdontologica:99] AVISO: Se borró el dentista con ID = 2
+[2025-04-09 18:41:45] [main] [ERROR] [ClinicaOdontologica:107] / by zero
+[2025-04-09 18:41:45] [main] [INFO ] [ClinicaOdontologica:129] Los datos actualizados son:  - ID: 1 - Matrícula: 1357 - Nombre: Roberto Gabriel - Apellido: Pérez
+[2025-04-09 18:41:45] [main] [INFO ] [ClinicaOdontologica:155] La consulta final luego de borrar el registro con ID = 2 es: 1 son:  - ID: 1 - Matrícula: 1357 - Nombre: Roberto Gabriel - Apellido: Pérez
