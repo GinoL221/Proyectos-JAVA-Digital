@@ -1,0 +1,8 @@
+[2025-04-09 00:57:54] [INFO ] [Animal:51] - NOMBRE: Molly, TIPO: Pez
+[2025-04-09 00:57:54] [INFO ] [Animal:51] - NOMBRE: Lola, TIPO: Perro
+[2025-04-09 00:57:54] [INFO ] [Animal:51] - NOMBRE: Mimi, TIPO: Gato
+[2025-04-09 00:57:54] [INFO ] [Animal:51] - NOMBRE: Paco, TIPO: Perico
+[2025-04-09 00:57:54] [WARN ] [Animal:57] - ADVERTENCIA: Se ha eliminado un registro de la tabla ANIMALES con ID = 4
+[2025-04-09 00:57:54] [INFO ] [Animal:69] - NOMBRE: Molly, TIPO: Pez
+[2025-04-09 00:57:54] [INFO ] [Animal:69] - NOMBRE: Lola, TIPO: Perro
+[2025-04-09 00:57:54] [INFO ] [Animal:69] - NOMBRE: Mimi, TIPO: Gato

@@ -1,0 +1,23 @@
+[2025-04-06 12:38:59] [ INFO ] [AverageList:17] La longitud de la lista es mayor a 5 y el promedio es: 3
+[2025-04-06 12:38:59] [ INFO ] [AverageList:17] La longitud de la lista es mayor a 5 y el promedio es: 6
+[2025-04-06 12:38:59] [ INFO ] [AverageList:20] La longitud de la lista es mayor a 10 y el promedio es: 6
+[2025-04-06 12:42:20] [ INFO ] [AverageList:17] La longitud de la lista es mayor a 5 y el promedio es: 3
+[2025-04-06 12:42:20] [ INFO ] [AverageList:17] La longitud de la lista es mayor a 5 y el promedio es: 6
+[2025-04-06 12:42:20] [ INFO ] [AverageList:20] La longitud de la lista es mayor a 10 y el promedio es: 6
+[2025-04-06 12:42:20] [ ERROR] [Main:21] Error: null
+[2025-04-06 12:44:12] [ INFO ] [AverageList:17] La longitud de la lista es mayor a 5 y el promedio es: 3
+[2025-04-06 12:44:12] [ INFO ] [AverageList:17] La longitud de la lista es mayor a 5 y el promedio es: 6
+[2025-04-06 12:44:12] [ INFO ] [AverageList:20] La longitud de la lista es mayor a 10 y el promedio es: 6
+[2025-04-06 12:44:12] [ ERROR] [Main:21] Error: La lista está vacía
+[2025-04-06 12:45:11] [ INFO ] [AverageList:17] La longitud de la lista es mayor a 5 y el promedio es: 3
+[2025-04-06 12:45:11] [ INFO ] [AverageList:17] La longitud de la lista es mayor a 5 y el promedio es: 6
+[2025-04-06 12:45:11] [ INFO ] [AverageList:20] La longitud de la lista es mayor a 10 y el promedio es: 6
+[2025-04-06 12:45:11] [ ERROR] [Main:21] Error: La lista está vacía - Exception
+[2025-04-06 12:45:23] [ INFO ] [AverageList:17] La longitud de la lista es mayor a 5 y el promedio es: 3
+[2025-04-06 12:45:23] [ INFO ] [AverageList:17] La longitud de la lista es mayor a 5 y el promedio es: 6
+[2025-04-06 12:45:23] [ INFO ] [AverageList:20] La longitud de la lista es mayor a 10 y el promedio es: 6
+[2025-04-06 12:45:23] [ ERROR] [Main:21] Error: La lista está vacía - java.lang.Exception: La lista está vacía
+[2025-04-06 12:45:41] [ INFO ] [AverageList:17] La longitud de la lista es mayor a 5 y el promedio es: 3
+[2025-04-06 12:45:41] [ INFO ] [AverageList:17] La longitud de la lista es mayor a 5 y el promedio es: 6
+[2025-04-06 12:45:41] [ INFO ] [AverageList:20] La longitud de la lista es mayor a 10 y el promedio es: 6
+[2025-04-06 12:45:41] [ ERROR] [Main:21] Error: La lista está vacía - class java.lang.Exception
