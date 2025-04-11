@@ -1,0 +1,62 @@
+[2025-04-11 02:41:32] [INFO ] [DentistDaoH2:35] Se inició una operación de guardado de odontólogo
+[2025-04-11 02:41:32] [INFO ] [DentistDaoH2:50] Este es el odontólogo guardado: model.Dentist@1dde4cb2
+[2025-04-11 02:41:32] [INFO ] [DentistDaoH2:35] Se inició una operación de guardado de odontólogo
+[2025-04-11 02:41:32] [INFO ] [DentistDaoH2:50] Este es el odontólogo guardado: model.Dentist@479d31f3
+[2025-04-11 02:41:32] [INFO ] [DentistDaoH2:35] Se inició una operación de guardado de odontólogo
+[2025-04-11 02:41:32] [INFO ] [DentistDaoH2:50] Este es el odontólogo guardado: model.Dentist@4d9e68d0
+[2025-04-11 02:41:32] [INFO ] [DentistDaoH2:35] Se inició una operación de guardado de odontólogo
+[2025-04-11 02:41:32] [INFO ] [DentistDaoH2:50] Este es el odontólogo guardado: model.Dentist@71809907
+[2025-04-11 02:41:32] [INFO ] [DentistDaoH2:72] Se inició una operación de búsqueda de odontólogo por ID
+[2025-04-11 02:41:32] [INFO ] [DentistDaoH2:87] Este es el odontólogo encontrado: 2es: model.Dentist@57a3af25
+[2025-04-11 02:41:32] [INFO ] [DentistDaoH2:115] Se inició una operación de actualización de odontólogo
+[2025-04-11 02:41:32] [WARN ] [DentistDaoH2:147] Se inició una operación de eliminación del odontólogo con ID: 2
+[2025-04-11 02:41:32] [INFO ] [DentistDaoH2:157] Se eliminó el odontólogo con ID: 2
+[2025-04-11 02:41:32] [INFO ] [DentistDaoH2:176] Se inició una operación de búsqueda de todos los odontólogos
+[2025-04-11 02:41:32] [INFO ] [DentistDaoH2:196] Este es el odontólogo encontrado: ID:1 Matricula: 123 Nombre: Juan Carlos Apellido: Pérez
+[2025-04-11 02:41:32] [INFO ] [DentistDaoH2:196] Este es el odontólogo encontrado: ID:3 Matricula: 789 Nombre: Luis Apellido: Martínez
+[2025-04-11 02:41:32] [INFO ] [DentistDaoH2:196] Este es el odontólogo encontrado: ID:4 Matricula: 101 Nombre: María Apellido: López
+[2025-04-11 02:52:16] [INFO ] [DentistDaoH2:35] Se inició una operación de guardado de odontólogo
+[2025-04-11 02:52:16] [INFO ] [DentistDaoH2:50] Este es el odontólogo guardado: JuanPérez Matrícula: 123
+[2025-04-11 02:52:16] [INFO ] [DentistDaoH2:35] Se inició una operación de guardado de odontólogo
+[2025-04-11 02:52:16] [INFO ] [DentistDaoH2:50] Este es el odontólogo guardado: AnaGómez Matrícula: 456
+[2025-04-11 02:52:16] [INFO ] [DentistDaoH2:35] Se inició una operación de guardado de odontólogo
+[2025-04-11 02:52:16] [INFO ] [DentistDaoH2:50] Este es el odontólogo guardado: LuisMartínez Matrícula: 789
+[2025-04-11 02:52:16] [INFO ] [DentistDaoH2:35] Se inició una operación de guardado de odontólogo
+[2025-04-11 02:52:16] [INFO ] [DentistDaoH2:50] Este es el odontólogo guardado: MaríaLópez Matrícula: 101
+[2025-04-11 02:52:16] [INFO ] [DentistDaoH2:73] Se inició una operación de búsqueda de odontólogo por ID
+[2025-04-11 02:52:16] [INFO ] [DentistDaoH2:88] Este es el odontólogo encontrado: ID: 2 Nombre: Ana Apellido: Gómez
+[2025-04-11 02:52:16] [INFO ] [DentistDaoH2:116] Se inició una operación de actualización de odontólogo
+[2025-04-11 02:52:16] [INFO ] [DentistDaoH2:129] El atributo actualizado es: Juan Carlos
+[2025-04-11 02:52:16] [WARN ] [DentistDaoH2:150] Se inició una operación de eliminación del odontólogo con ID: 2
+[2025-04-11 02:52:16] [INFO ] [DentistDaoH2:160] Se eliminó el odontólogo con ID: 2
+[2025-04-11 02:52:16] [INFO ] [DentistDaoH2:179] Se inició una operación de búsqueda de todos los odontólogos
+[2025-04-11 02:52:16] [INFO ] [DentistDaoH2:199] Este es el odontólogo encontrado: ID:1 Matricula: 123 Nombre: Juan Carlos Apellido: Pérez
+[2025-04-11 02:52:16] [INFO ] [DentistDaoH2:199] Este es el odontólogo encontrado: ID:3 Matricula: 789 Nombre: Luis Apellido: Martínez
+[2025-04-11 02:52:16] [INFO ] [DentistDaoH2:199] Este es el odontólogo encontrado: ID:4 Matricula: 101 Nombre: María Apellido: López
+[2025-04-11 02:54:08] [INFO ] [DentistDaoH2:35] Se inició una operación de guardado de odontólogo
+[2025-04-11 02:54:08] [INFO ] [DentistDaoH2:50] Este es el odontólogo guardado: JuanPérez Matrícula: 123
+[2025-04-11 02:54:08] [INFO ] [DentistDaoH2:35] Se inició una operación de guardado de odontólogo
+[2025-04-11 02:54:08] [INFO ] [DentistDaoH2:50] Este es el odontólogo guardado: AnaGómez Matrícula: 456
+[2025-04-11 02:54:08] [INFO ] [DentistDaoH2:35] Se inició una operación de guardado de odontólogo
+[2025-04-11 02:54:08] [INFO ] [DentistDaoH2:50] Este es el odontólogo guardado: LuisMartínez Matrícula: 789
+[2025-04-11 02:54:08] [INFO ] [DentistDaoH2:35] Se inició una operación de guardado de odontólogo
+[2025-04-11 02:54:08] [INFO ] [DentistDaoH2:50] Este es el odontólogo guardado: MaríaLópez Matrícula: 101
+[2025-04-11 02:54:08] [INFO ] [DentistDaoH2:73] Se inició una operación de búsqueda de odontólogo por ID
+[2025-04-11 02:54:08] [INFO ] [DentistDaoH2:88] Este es el odontólogo encontrado: ID: 2, Nombre: Ana, Apellido: Gómez
+[2025-04-11 02:54:08] [INFO ] [DentistDaoH2:117] Se inició una operación de actualización de odontólogo
+[2025-04-11 02:54:08] [INFO ] [DentistDaoH2:130] El atributo actualizado es: Juan Carlos
+[2025-04-11 02:54:08] [WARN ] [DentistDaoH2:151] Se inició una operación de eliminación del odontólogo con ID: 2
+[2025-04-11 02:54:08] [INFO ] [DentistDaoH2:161] Se eliminó el odontólogo con ID: 2
+[2025-04-11 02:54:08] [INFO ] [DentistDaoH2:180] Se inició una operación de búsqueda de todos los odontólogos
+[2025-04-11 02:54:08] [INFO ] [DentistDaoH2:200] Este es el odontólogo encontrado:, ID:1, Matricula: 123, Nombre: Juan Carlos, Apellido: Pérez
+[2025-04-11 02:54:08] [INFO ] [DentistDaoH2:200] Este es el odontólogo encontrado:, ID:3, Matricula: 789, Nombre: Luis, Apellido: Martínez
+[2025-04-11 02:54:08] [INFO ] [DentistDaoH2:200] Este es el odontólogo encontrado:, ID:4, Matricula: 101, Nombre: María, Apellido: López
+[2025-04-11 03:06:03] [INFO ] [DentistDaoH2:35] Se inició una operación de guardado de odontólogo
+[2025-04-11 03:06:03] [INFO ] [DentistDaoH2:50] Este es el odontólogo guardado: CarolinaGarro Matrícula: 555
+[2025-04-11 03:07:13] [INFO ] [DentistDaoH2:73] Se inició una operación de búsqueda de odontólogo por ID
+[2025-04-11 03:07:13] [INFO ] [DentistDaoH2:88] Este es el odontólogo encontrado: ID: 1, Nombre: Carolina, Apellido: Garro
+[2025-04-11 03:11:28] [INFO ] [DentistDaoH2:117] Se inició una operación de actualización de odontólogo
+[2025-04-11 03:11:29] [INFO ] [DentistDaoH2:130] El atributo actualizado es: Veronica
+[2025-04-11 03:13:45] [INFO ] [DentistDaoH2:73] Se inició una operación de búsqueda de odontólogo por ID
+[2025-04-11 03:15:39] [INFO ] [DentistDaoH2:180] Se inició una operación de búsqueda de todos los odontólogos
+[2025-04-11 03:15:40] [INFO ] [DentistDaoH2:200] Este es el odontólogo encontrado:, ID:1, Matricula: 777, Nombre: Veronica, Apellido: Garcia
