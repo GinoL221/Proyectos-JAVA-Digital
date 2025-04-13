@@ -1,0 +1,5 @@
+Juan, Pérez, 123, 50000.0
+Ana, Gómez, 456, 60000.0
+Luis, Martínez, 789, 70000.0
+María, López, 101, 80000.0
+Pedro, García, 112, 90000.0
