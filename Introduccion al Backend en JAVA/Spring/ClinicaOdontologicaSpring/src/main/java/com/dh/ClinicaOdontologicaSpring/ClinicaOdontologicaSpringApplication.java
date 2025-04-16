@@ -1,5 +1,6 @@
 package com.dh.ClinicaOdontologicaSpring;
 
+import com.dh.ClinicaOdontologicaSpring.dao.BD;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -7,6 +8,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class ClinicaOdontologicaSpringApplication {
 
 	public static void main(String[] args) {
+		BD.createTable();
 		SpringApplication.run(ClinicaOdontologicaSpringApplication.class, args);
 	}
 
