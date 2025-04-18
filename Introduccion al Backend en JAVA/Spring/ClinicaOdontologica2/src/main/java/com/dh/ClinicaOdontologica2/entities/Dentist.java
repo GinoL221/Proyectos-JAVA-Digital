@@ -11,7 +11,7 @@ public class Dentist {
     @Column(name = "dentist_id")
     private Integer id;
     @Column(name = "registration_number")
-    private Integer registrationNumber;
+    private String registrationNumber;
     @Column(name = "name")
     private String name;
     @Column(name = "last_name")
@@ -28,11 +28,11 @@ public class Dentist {
         this.id = id;
     }
 
-    public Integer getRegistrationNumber() {
+    public String getRegistrationNumber() {
         return registrationNumber;
     }
 
-    public void setRegistrationNumber(Integer registrationNumber) {
+    public void setRegistrationNumber(String registrationNumber) {
         this.registrationNumber = registrationNumber;
     }
 
