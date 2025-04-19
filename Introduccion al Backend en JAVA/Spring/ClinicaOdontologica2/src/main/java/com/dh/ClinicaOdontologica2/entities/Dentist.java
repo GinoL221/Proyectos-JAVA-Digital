@@ -12,9 +12,9 @@ public class Dentist {
     private Integer id;
     @Column(name = "registration_number")
     private String registrationNumber;
-    @Column(name = "name")
+    @Column(name = "name", nullable = false)
     private String name;
-    @Column(name = "last_name")
+    @Column(name = "last_name", nullable = false)
     private String lastName;
 
     public Dentist() {
