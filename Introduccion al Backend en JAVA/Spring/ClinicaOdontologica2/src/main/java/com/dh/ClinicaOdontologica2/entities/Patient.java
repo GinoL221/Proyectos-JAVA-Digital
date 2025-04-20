@@ -7,18 +7,27 @@ import java.time.LocalDate;
 @Entity
 @Table(name = "Patients")
 public class Patient {
+    
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "patient_id")
     private Integer id;
+
     @Column(name = "name")
     private String name;
+
     @Column(name = "last_name")
     private String lastName;
+
     @Column(name = "card_identity")
-    private String cardIndentity;
+    private String cardIdentity;
+
     @Column(name = "admission_date")
     private LocalDate admissionOfDate;
+
+    @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @JoinColumn(name = "id_address", referencedColumnName = "id")
+    private Address address;
 
     public Patient() {
     }
@@ -47,12 +56,12 @@ public class Patient {
         this.lastName = lastName;
     }
 
-    public String getCardIndentity() {
-        return cardIndentity;
+    public String getCardIdentity() {
+        return cardIdentity;
     }
 
-    public void setCardIndentity(String cardIndentity) {
-        this.cardIndentity = cardIndentity;
+    public void setCardIdentity(String cardIdentity) {
+        this.cardIdentity = cardIdentity;
     }
 
     public LocalDate getAdmissionOfDate() {
@@ -61,5 +70,13 @@ public class Patient {
 
     public void setAdmissionOfDate(LocalDate admissionOfDate) {
         this.admissionOfDate = admissionOfDate;
+    }
+
+    public Address getAddress() {
+        return address;
+    }
+
+    public void setAddress(Address address) {
+        this.address = address;
     }
 }

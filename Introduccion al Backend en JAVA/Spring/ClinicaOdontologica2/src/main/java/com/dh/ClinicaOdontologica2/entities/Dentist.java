@@ -10,10 +10,13 @@ public class Dentist {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "dentist_id")
     private Integer id;
+
     @Column(name = "registration_number")
     private String registrationNumber;
+
     @Column(name = "name", nullable = false)
     private String name;
+
     @Column(name = "last_name", nullable = false)
     private String lastName;
 
