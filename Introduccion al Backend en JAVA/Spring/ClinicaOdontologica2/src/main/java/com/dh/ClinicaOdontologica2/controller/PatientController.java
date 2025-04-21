@@ -72,4 +72,26 @@ public class PatientController {
             return "El paciente con id:" + id + " no fue encontrado";
         }
     }
+
+    // Consultar paciente por apellido
+    @GetMapping("/lastName/{lastName}")
+    public Patient findByLastName(@PathVariable String lastName) {
+        Optional<Patient> optionalPatient = patientService.findByLastName(lastName);
+        if (optionalPatient.isPresent()) {
+            return optionalPatient.get();
+        } else {
+            return null; // O lanzar una excepción personalizada
+        }
+    }
+
+    // Consultar paciente por nombre
+    @GetMapping("/name/{name}")
+    public Patient findByName(@PathVariable String name) {
+        Optional<Patient> optionalPatient = patientService.findByName(name);
+        if (optionalPatient.isPresent()) {
+            return optionalPatient.get();
+        } else {
+            return null; // O lanzar una excepción personalizada
+        }
+    }
 }
