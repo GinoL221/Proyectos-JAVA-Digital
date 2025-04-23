@@ -1,6 +1,6 @@
 package com.dh.dentalClinicMVC.model;
 
-public class Adress {
+public class Address {
 
     private Integer id;
     private String street;
@@ -8,7 +8,7 @@ public class Adress {
     private String location;
     private String province;
 
-    public Adress(Integer id, String street, Integer number, String location, String province) {
+    public Address(Integer id, String street, Integer number, String location, String province) {
         this.id = id;
         this.street = street;
         this.number = number;
@@ -16,7 +16,7 @@ public class Adress {
         this.province = province;
     }
 
-    public Adress(String street, Integer number, String location, String province) {
+    public Address(String street, Integer number, String location, String province) {
         this.street = street;
         this.number = number;
         this.location = location;

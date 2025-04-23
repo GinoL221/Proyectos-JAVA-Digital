@@ -9,23 +9,23 @@ public class Patient {
     private String lastName;
     private Integer cardIdentity;
     private LocalDate admissionDate;
-    private Adress adress;
+    private Address address;
 
-    public Patient(Integer id, String name, String lastName, Integer cardIdentity, LocalDate admissionDate, Adress adress) {
+    public Patient(Integer id, String name, String lastName, Integer cardIdentity, LocalDate admissionDate, Address address) {
         this.id = id;
         this.name = name;
         this.lastName = lastName;
         this.cardIdentity = cardIdentity;
         this.admissionDate = admissionDate;
-        this.adress = adress;
+        this.address = address;
     }
 
-    public Patient(String name, String lastName, Integer cardIdentity, LocalDate admissionDate, Adress adress) {
+    public Patient(String name, String lastName, Integer cardIdentity, LocalDate admissionDate, Address address) {
         this.name = name;
         this.lastName = lastName;
         this.cardIdentity = cardIdentity;
         this.admissionDate = admissionDate;
-        this.adress = adress;
+        this.address = address;
     }
 
     public Integer getId() {
@@ -68,11 +68,11 @@ public class Patient {
         this.admissionDate = admissionDate;
     }
 
-    public Adress getAdress() {
-        return adress;
+    public Address getAdress() {
+        return address;
     }
 
-    public void setAdress(Adress adress) {
-        this.adress = adress;
+    public void setAdress(Address address) {
+        this.address = address;
     }
 }
