@@ -21,6 +21,8 @@ public class PatientDaoH2 implements IDao<Patient> {
 
     private static final String SQL_SELECT_ALL = "SELECT * FROM PATIENTS";
 
+    private static final String SQL_SELECT_EMAIL = "SELECT * FROM PATIENTS WHERE EMAIL = ?";
+
     @Override
     public Patient save(Patient patient) {
         Connection connection = null;
@@ -179,6 +181,37 @@ public class PatientDaoH2 implements IDao<Patient> {
 
     @Override
     public Patient findByString(String value) {
-        return null;
+        Connection connection = null;
+        Patient patient = null;
+        try {
+            connection = DB.getConnection();
+            PreparedStatement ps = connection.prepareStatement(SQL_SELECT_EMAIL);
+            ps.setString(1, value);
+
+            ResultSet rs = ps.executeQuery();
+            AddressDaoH2 addressDaoH2 = new AddressDaoH2();
+
+            while(rs.next()){
+                Address address = addressDaoH2.findById(rs.getInt(7));
+                patient = new Patient(rs.getInt(1),
+                        rs.getString(2),
+                        rs.getString(3),
+                        rs.getString(4),
+                        rs.getInt(5),
+                        rs.getDate(6).toLocalDate(),
+                        address);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                if (connection != null) {
+                    connection.close();
+                }
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+        return patient;
     }
 }

@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
-@RequestMapping("/patients")
+@RequestMapping("/patient")
 public class PatientController {
 
     private PatientService patientService;
@@ -18,7 +18,7 @@ public class PatientController {
         this.patientService = patientService;
     }
 
-    // Este método maneja las solicitudes GET a la ruta "/patients"
+    // Este metodo maneja las solicitudes GET a la ruta "/patients"
     @GetMapping
     public String findPatientByEmail(Model model, @RequestParam("email") String email) {
         Patient patient = patientService.findByEmail(email);
@@ -26,6 +26,4 @@ public class PatientController {
         model.addAttribute("lastName", patient.getLastName());
         return "index"; // Retorna la vista "index" con los atributos del paciente
     }
-
 }
-

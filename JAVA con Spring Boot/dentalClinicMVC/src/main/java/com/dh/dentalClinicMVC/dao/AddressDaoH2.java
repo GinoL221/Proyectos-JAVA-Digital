@@ -16,7 +16,8 @@ public class AddressDaoH2 implements IDao<Address> {
 
     private static final String SQL_SELECT_ID = "SELECT * FROM ADDRESSES WHERE ID = ?";
 
-    private static final String SQL_UPDATE = "UPDATE ADDRESSES SET STREET = ?, NUMBER = ?, LOCATION = ?, PROVINCE = ? WHERE ID = ?";
+    private static final String SQL_UPDATE = "UPDATE ADDRESSES SET STREET = ?, NUMBER = ?, LOCATION = ?," +
+            " PROVINCE = ? WHERE ID = ?";
 
     private static final String SQL_DELETE = "DELETE FROM ADDRESSES WHERE ID = ?";
 

@@ -3,7 +3,9 @@ package com.dh.dentalClinicMVC.services;
 import com.dh.dentalClinicMVC.dao.IDao;
 import com.dh.dentalClinicMVC.dao.PatientDaoH2;
 import com.dh.dentalClinicMVC.model.Patient;
+import org.springframework.stereotype.Service;
 
+@Service
 public class PatientService {
 
     private IDao<Patient> patientIDao;
