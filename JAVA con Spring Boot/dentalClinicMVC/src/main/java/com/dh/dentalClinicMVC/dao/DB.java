@@ -25,6 +25,7 @@ public class DB {
             "CREATE TABLE PATIENTS (ID INT AUTO_INCREMENT PRIMARY KEY, " +
             "NAME VARCHAR(100) NOT NULL, " +
             "LAST_NAME VARCHAR(100) NOT NULL, " +
+            "EMAIL VARCHAR(100) NOT NULL, " +
             "CARD_IDENTITY INT NOT NULL, " +
             "ADMISSION_DATE DATE NOT NULL, " +
             "ADDRESS_ID INT NOT NULL)";
@@ -37,26 +38,17 @@ public class DB {
 
     private static final String SQL_INSERT = "INSERT INTO ADDRESSES(STREET, NUMBER, LOCATION, PROVINCE) " +
             "VALUES ('Calle 1', 123, 'Lujan de Cuyo', 'Buenos Aires'); " +
-            "INSERT INTO PATIENTS(NAME, LAST_NAME, CARD_IDENTITY, ADMISSION_DATE, ADDRESS_ID) " +
-            "VALUES ('Juan', 'Perez', 12345678, '2023-01-01', 1); " +
+            "INSERT INTO PATIENTS(NAME, LAST_NAME, EMAIL, CARD_IDENTITY, ADMISSION_DATE, ADDRESS_ID) " +
+            "VALUES ('Juan', 'Perez', JPerez@email.com, 12345678, '2023-01-01', 1); " +
             "INSERT INTO DENTISTS(REGISTRATION_NUMBER, NAME, LAST_NAME) " +
             "VALUES (123456, 'Dr. Smith', 'Johnson');";
 
-            // Uncomment the following lines to insert multiple addresses
-            /*+
-            "('Calle 2', 456, 'Mendoza', 'Mendoza'), " +
-            "('Calle 3', 789, 'San Juan', 'San Juan'), " +
-            "('Calle 4', 101, 'Merlo', 'San Luis'), " +
-            "('Calle 5', 112, 'Bariloche', 'Neuquén'), " +
-            "('Calle 6', 131, 'San Rafael', 'Mendoza')";
-            */
-
-    public static Connection getConnection() throws Exception{
+    public static Connection getConnection() throws Exception {
         Class.forName(DRIVE);
-        return DriverManager.getConnection(URL,USER,PASSWORD);
+        return DriverManager.getConnection(URL, USER, PASSWORD);
     }
 
-    public static void createTables(){
+    public static void createTables() {
         Connection connection = null;
         try {
             connection = getConnection();

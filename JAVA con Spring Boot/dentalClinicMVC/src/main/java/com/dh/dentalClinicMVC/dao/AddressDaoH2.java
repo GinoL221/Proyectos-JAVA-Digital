@@ -156,4 +156,9 @@ public class AddressDaoH2 implements IDao<Address> {
         }
         return List.of();
     }
+
+    @Override
+    public Address findByString(String value) {
+        return null;
+    }
 }

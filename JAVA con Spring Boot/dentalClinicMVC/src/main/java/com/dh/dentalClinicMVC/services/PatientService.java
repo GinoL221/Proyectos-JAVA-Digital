@@ -31,4 +31,8 @@ public class PatientService {
     public IDao<Patient> getPatientIDao() {
         return patientIDao;
     }
+
+    public Patient findByEmail(String email) {
+        return patientIDao.findByString(email);
+    }
 }
