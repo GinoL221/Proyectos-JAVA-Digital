@@ -173,4 +173,3 @@ public class PatientDaoH2 implements IDao<Patient> {
         return patients;
     }
 }
-
