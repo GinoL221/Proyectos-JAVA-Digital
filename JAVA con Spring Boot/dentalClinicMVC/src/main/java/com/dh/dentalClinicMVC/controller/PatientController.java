@@ -18,7 +18,7 @@ public class PatientController {
         this.patientService = patientService;
     }
 
-    // Este metodo maneja las solicitudes GET a la ruta "/patients"
+    // Este metodo maneja las solicitudes GET a la ruta "/patient"
     @GetMapping
     public String findPatientByEmail(Model model, @RequestParam("email") String email) {
         Patient patient = patientService.findByEmail(email);
