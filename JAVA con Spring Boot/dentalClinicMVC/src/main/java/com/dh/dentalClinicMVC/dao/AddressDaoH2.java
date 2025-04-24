@@ -9,7 +9,7 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
-public class AddressDaoH2 implements IDao<Address>{
+public class AddressDaoH2 implements IDao<Address> {
 
     private static final String SQL_INSERT = "INSERT INTO ADDRESSES(STREET. NUMBER, LOCATION, PROVINCE) " +
             "VALUES (?, ?, ?)";
@@ -25,7 +25,7 @@ public class AddressDaoH2 implements IDao<Address>{
     @Override
     public Address save(Address address) {
         Connection connection = null;
-        try{
+        try {
             connection = DB.getConnection();
             PreparedStatement ps = connection.prepareStatement(SQL_INSERT, Statement.RETURN_GENERATED_KEYS);
             ps.setString(1, address.getStreet());
@@ -35,12 +35,12 @@ public class AddressDaoH2 implements IDao<Address>{
             ps.execute();
 
             ResultSet rs = ps.getGeneratedKeys();
-            while(rs.next()){
+            while (rs.next()) {
                 address.setId(rs.getInt(1));
             }
         } catch (Exception e) {
             e.printStackTrace();
-        }finally {
+        } finally {
             try {
                 if (connection != null) {
                     connection.close();
@@ -62,14 +62,14 @@ public class AddressDaoH2 implements IDao<Address>{
             ps.setInt(1, id);
 
             ResultSet rs = ps.executeQuery();
-            while(rs.next()){
+            while (rs.next()) {
                 // Vamos a completar el domicilio
                 address = new Address(rs.getInt(1), rs.getString(2),
                         rs.getInt(3), rs.getString(4), rs.getString(5));
             }
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
-        }finally {
+        } finally {
             try {
                 if (connection != null) {
                     connection.close();
@@ -92,11 +92,10 @@ public class AddressDaoH2 implements IDao<Address>{
             ps.setString(3, address.getLocation());
             ps.setString(4, address.getProvince());
             ps.setInt(5, address.getId());
-            ps.execute();
-
+            ps.executeUpdate();
         } catch (Exception e) {
             e.printStackTrace();
-        }finally {
+        } finally {
             try {
                 if (connection != null) {
                     connection.close();
@@ -117,7 +116,7 @@ public class AddressDaoH2 implements IDao<Address>{
             ps.execute();
         } catch (Exception e) {
             e.printStackTrace();
-        }finally {
+        } finally {
             try {
                 if (connection != null) {
                     connection.close();
@@ -137,7 +136,7 @@ public class AddressDaoH2 implements IDao<Address>{
             connection = DB.getConnection();
             PreparedStatement ps = connection.prepareStatement(SQL_SELECT_ALL);
             ResultSet rs = ps.executeQuery();
-            while(rs.next()){
+            while (rs.next()) {
                 // Vamos a completar el domicilio
                 address = new Address(rs.getInt(1), rs.getString(2),
                         rs.getInt(3), rs.getString(4), rs.getString(5));
@@ -146,7 +145,7 @@ public class AddressDaoH2 implements IDao<Address>{
             }
         } catch (Exception e) {
             e.printStackTrace();
-        }finally {
+        } finally {
             try {
                 if (connection != null) {
                     connection.close();
