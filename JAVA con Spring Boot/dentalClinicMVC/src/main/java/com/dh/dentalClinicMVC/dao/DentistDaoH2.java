@@ -8,16 +8,16 @@ import java.util.List;
 
 public class DentistDaoH2 implements IDao<Dentist> {
 
-    private static final String SQL_INSERT = "INSERT INTO DENTIST(REGISTRATION_NUMBER, NAME, LAST_NAME) " +
+    private static final String SQL_INSERT = "INSERT INTO DENTISTS(REGISTRATION_NUMBER, NAME, LAST_NAME) " +
             "VALUES (?, ?, ?)";
 
-    private static final String SQL_SELECT_ID = "SELECT * FROM DENTIST WHERE ID = ?";
+    private static final String SQL_SELECT_ID = "SELECT * FROM DENTISTS WHERE ID = ?";
 
-    private static final String SQL_UPDATE = "UPDATE DENTIST SET NAME = ?, LAST_NAME = ? WHERE ID = ?";
+    private static final String SQL_UPDATE = "UPDATE DENTISTS SET NAME = ?, LAST_NAME = ? WHERE ID = ?";
 
-    private static final String SQL_DELETE = "DELETE FROM DENTIST WHERE ID = ?";
+    private static final String SQL_DELETE = "DELETE FROM DENTISTS WHERE ID = ?";
 
-    private static final String SQL_SELECT_ALL = "SELECT * FROM DENTIST";
+    private static final String SQL_SELECT_ALL = "SELECT * FROM DENTISTS";
 
     @Override
     public Dentist save(Dentist dentist) {
