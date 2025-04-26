@@ -12,12 +12,12 @@ public class DentistService {
 
     private IDao<Dentist> dentistIDao;
 
-    public DentistService(){
+    public DentistService() {
         this.dentistIDao = new DentistDaoH2();
     }
 
-    public void save(Dentist dentist) {
-        dentistIDao.save(dentist);
+    public Dentist save(Dentist dentist) {
+        return dentistIDao.save(dentist);
     }
 
     public void delete(Integer id) {
@@ -34,5 +34,9 @@ public class DentistService {
 
     public List<Dentist> findAll() {
         return dentistIDao.findAll();
+    }
+
+    public IDao<Dentist> getDentistIDao() {
+        return dentistIDao;
     }
 }

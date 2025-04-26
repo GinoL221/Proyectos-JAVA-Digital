@@ -5,6 +5,8 @@ import com.dh.dentalClinicMVC.dao.PatientDaoH2;
 import com.dh.dentalClinicMVC.model.Patient;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class PatientService {
 
@@ -20,6 +22,10 @@ public class PatientService {
 
     public Patient findById(Integer id) {
         return patientIDao.findById(id);
+    }
+
+    public List<Patient> findAll() {
+        return patientIDao.findAll();
     }
 
     public void delete(Integer id) {

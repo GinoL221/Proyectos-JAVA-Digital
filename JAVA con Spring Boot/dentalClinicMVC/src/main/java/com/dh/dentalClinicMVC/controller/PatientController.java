@@ -1,0 +1,48 @@
+package com.dh.dentalClinicMVC.controller;
+
+import com.dh.dentalClinicMVC.model.Patient;
+import com.dh.dentalClinicMVC.services.PatientService;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
+
+@RestController
+@RequestMapping("/patient")
+public class PatientController {
+
+    private PatientService patientService;
+
+    public PatientController(PatientService patientService) {
+        this.patientService = patientService;
+    }
+
+    // Endpoint que nos permite agregar un paciente
+    @PostMapping("/save")
+    public Patient save(@RequestBody Patient patient) {
+        return patientService.save(patient);
+    }
+
+    // Endpoint que nos permite actualizar un paciente
+    @PutMapping("/update")
+    public void update(@RequestBody Patient patient) {
+        patientService.update(patient);
+    }
+
+    // Endpoint que nos permite eliminar
+    @DeleteMapping("/delete/{id}")
+    public void delete(@PathVariable Integer id) {
+        patientService.delete(id);
+    }
+
+    // Endpoint que nos permite buscar un paciente por ID
+    @GetMapping("/{id}")
+    public Patient findById(@PathVariable Integer id) {
+        return patientService.findById(id);
+    }
+
+    // Endpoint que nos permite devolver todos los pacientes
+    @GetMapping("/all")
+    public List<Patient> findAllPatient() {
+        return patientService.getPatientIDao().findAll();
+    }
+}

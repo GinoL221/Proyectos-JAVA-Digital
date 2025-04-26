@@ -9,13 +9,13 @@ import java.util.List;
 
 public class PatientDaoH2 implements IDao<Patient> {
 
-    private static final String SQL_INSERT = "INSERT INTO PATIENTS(NAME, LAST_NAME, EMAIL, CARD_IDENTITY," +
-            " ADMISSION_DATE, ADDRESS_ID) VALUES (?, ?, ?, ?, ?, ?, ?)";
+    private static final String SQL_INSERT = "INSERT INTO PATIENTS(NAME, LAST_NAME, EMAIL, CARD_IDENTITY, " +
+            "ADMISSION_DATE, ADDRESS_ID) VALUES (?, ?, ?, ?, ?, ?)";
 
     private static final String SQL_SELECT_ID = "SELECT * FROM PATIENTS WHERE ID = ?";
 
-    private static final String SQL_UPDATE = "UPDATE PATIENTS SET NAME = ?, LAST_NAME = ?, EMAIL = ?," +
-            " CARD_IDENTITY = ?, ADMISSION_DATE = ?, ADDRESS_ID = ? WHERE ID = ?";
+    private static final String SQL_UPDATE = "UPDATE PATIENTS SET NAME = ?, LAST_NAME = ?, EMAIL = ?, " +
+            "CARD_IDENTITY = ?, ADMISSION_DATE = ?, ADDRESS_ID = ? WHERE ID = ?";
 
     private static final String SQL_DELETE = "DELETE FROM PATIENTS WHERE ID = ?";
 
@@ -190,8 +190,7 @@ public class PatientDaoH2 implements IDao<Patient> {
 
             ResultSet rs = ps.executeQuery();
             AddressDaoH2 addressDaoH2 = new AddressDaoH2();
-
-            while(rs.next()){
+            while (rs.next()) {
                 Address address = addressDaoH2.findById(rs.getInt(7));
                 patient = new Patient(rs.getInt(1),
                         rs.getString(2),

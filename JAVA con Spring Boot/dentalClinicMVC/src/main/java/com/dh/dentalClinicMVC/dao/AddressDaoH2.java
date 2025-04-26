@@ -11,8 +11,8 @@ import java.util.List;
 
 public class AddressDaoH2 implements IDao<Address> {
 
-    private static final String SQL_INSERT = "INSERT INTO ADDRESSES(STREET. NUMBER, LOCATION, PROVINCE) " +
-            "VALUES (?, ?, ?)";
+    private static final String SQL_INSERT = "INSERT INTO ADDRESSES(STREET, NUMBER, LOCATION, PROVINCE) " +
+            "VALUES (?, ?, ?, ?)";
 
     private static final String SQL_SELECT_ID = "SELECT * FROM ADDRESSES WHERE ID = ?";
 

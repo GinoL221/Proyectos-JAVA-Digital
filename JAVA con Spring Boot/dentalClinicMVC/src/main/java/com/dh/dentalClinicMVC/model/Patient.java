@@ -12,6 +12,9 @@ public class Patient {
     private LocalDate admissionDate;
     private Address address;
 
+    public Patient() {
+    }
+
     public Patient(Integer id, String name, String lastName, String email, Integer cardIdentity, LocalDate admissionDate, Address address) {
         this.id = id;
         this.name = name;
