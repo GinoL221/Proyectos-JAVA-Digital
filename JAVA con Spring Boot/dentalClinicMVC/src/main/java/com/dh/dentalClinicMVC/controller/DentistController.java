@@ -42,7 +42,7 @@ public class DentistController {
 
     // Endpoint que nos permite devolver todos los dentistas
     @GetMapping("/all")
-    public List<Dentist> findAllDentist() {
+    public List<Dentist> findAll() {
         return dentistService.findAll();
     }
 }

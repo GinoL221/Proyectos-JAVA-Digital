@@ -6,8 +6,8 @@ import org.springframework.ui.Model;
 import com.dh.dentalClinicMVC.model.Patient;
 import com.dh.dentalClinicMVC.services.PatientService;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller

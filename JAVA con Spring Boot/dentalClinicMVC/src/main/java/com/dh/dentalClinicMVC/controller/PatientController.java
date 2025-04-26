@@ -42,7 +42,7 @@ public class PatientController {
 
     // Endpoint que nos permite devolver todos los pacientes
     @GetMapping("/all")
-    public List<Patient> findAllPatient() {
+    public List<Patient> findAll() {
         return patientService.getPatientIDao().findAll();
     }
 }
