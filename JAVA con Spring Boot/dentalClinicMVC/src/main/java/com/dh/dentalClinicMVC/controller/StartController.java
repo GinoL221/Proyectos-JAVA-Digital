@@ -11,13 +11,13 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
-@RequestMapping("/index")
-public class IndexController {
+@RequestMapping("/start")
+public class StartController {
 
     private PatientService patientService;
     private DentistService dentistService;
 
-    public IndexController(PatientService patientService, DentistService dentistService) {
+    public StartController(PatientService patientService, DentistService dentistService) {
         this.patientService = patientService;
         this.dentistService = dentistService;
     }
@@ -40,6 +40,6 @@ public class IndexController {
         model.addAttribute("dentistLastName", dentist.getLastName());
         model.addAttribute("registrationNumber", dentist.getRegistrationNumber());
 
-        return "index";
+        return "start";
     }
 }

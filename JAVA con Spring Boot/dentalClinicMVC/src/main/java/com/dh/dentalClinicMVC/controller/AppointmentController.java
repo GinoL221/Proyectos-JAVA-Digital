@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/appointment")
+@RequestMapping("/appointments")
 public class AppointmentController {
 
     private AppointmentService appointmentService;
@@ -25,7 +25,7 @@ public class AppointmentController {
         this.patientService = patientService;
     }
 
-    @PostMapping("/save")
+    @PostMapping
     public ResponseEntity<Appointment> save(@RequestBody Appointment appointment) {
         ResponseEntity<Appointment> response;
         // Chequea si el dentista y el paciente existen
@@ -40,7 +40,7 @@ public class AppointmentController {
         return response;
     }
 
-    @GetMapping("/all")
+    @GetMapping
     public ResponseEntity<List<Appointment>> findAll() {
         return ResponseEntity.ok(appointmentService.findAll());
     }

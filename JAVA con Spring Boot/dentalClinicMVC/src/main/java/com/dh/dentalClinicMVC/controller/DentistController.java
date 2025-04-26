@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/dentist")
+@RequestMapping("/dentists")
 public class DentistController {
 
     private DentistService dentistService;
@@ -17,19 +17,19 @@ public class DentistController {
     }
 
     // Endpoint que nos permite agregar un dentista
-    @PostMapping("/save")
+    @PostMapping
     public Dentist save(@RequestBody Dentist dentist) {
         return dentistService.save(dentist);
     }
 
     // Endpoint que nos permite actualizar un dentista
-    @PutMapping("/update")
+    @PutMapping
     public void update(@RequestBody Dentist dentist) {
         dentistService.update(dentist);
     }
 
     // Endpoint que nos permite eliminar
-    @DeleteMapping("/delete/{id}")
+    @DeleteMapping("/{id}")
     public void delete(@PathVariable Integer id) {
         dentistService.delete(id);
     }
@@ -41,7 +41,7 @@ public class DentistController {
     }
 
     // Endpoint que nos permite devolver todos los dentistas
-    @GetMapping("/all")
+    @GetMapping
     public List<Dentist> findAll() {
         return dentistService.findAll();
     }
