@@ -13,7 +13,7 @@ public class DentistDaoH2 implements IDao<Dentist> {
 
     private static final String SQL_SELECT_ID = "SELECT * FROM DENTISTS WHERE ID = ?";
 
-    private static final String SQL_UPDATE = "UPDATE DENTISTS SET NAME = ?, LAST_NAME = ? WHERE ID = ?";
+    private static final String SQL_UPDATE = "UPDATE DENTISTS SET REGISTRATION_NUMBER = ?, NAME = ?, LAST_NAME = ? WHERE ID = ?";
 
     private static final String SQL_DELETE = "DELETE FROM DENTISTS WHERE ID = ?";
 
