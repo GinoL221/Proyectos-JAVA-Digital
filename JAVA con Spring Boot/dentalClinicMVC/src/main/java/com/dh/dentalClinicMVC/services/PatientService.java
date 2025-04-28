@@ -1,7 +1,6 @@
 package com.dh.dentalClinicMVC.services;
 
 import com.dh.dentalClinicMVC.dao.IDao;
-import com.dh.dentalClinicMVC.dao.PatientDaoH2;
 import com.dh.dentalClinicMVC.model.Patient;
 import org.springframework.stereotype.Service;
 
@@ -12,8 +11,8 @@ public class PatientService {
 
     private IDao<Patient> patientIDao;
 
-    public PatientService() {
-        this.patientIDao = new PatientDaoH2();
+    public PatientService(IDao<Patient> patientIDao) {
+        this.patientIDao = patientIDao;
     }
 
     public Patient save(Patient patient) {

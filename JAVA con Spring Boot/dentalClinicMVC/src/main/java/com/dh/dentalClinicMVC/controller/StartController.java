@@ -2,6 +2,7 @@ package com.dh.dentalClinicMVC.controller;
 
 import com.dh.dentalClinicMVC.model.Dentist;
 import com.dh.dentalClinicMVC.services.DentistService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ui.Model;
 import com.dh.dentalClinicMVC.model.Patient;
 import com.dh.dentalClinicMVC.services.PatientService;
@@ -17,6 +18,7 @@ public class StartController {
     private PatientService patientService;
     private DentistService dentistService;
 
+    @Autowired
     public StartController(PatientService patientService, DentistService dentistService) {
         this.patientService = patientService;
         this.dentistService = dentistService;

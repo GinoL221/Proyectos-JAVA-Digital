@@ -2,6 +2,7 @@ package com.dh.dentalClinicMVC.controller;
 
 import com.dh.dentalClinicMVC.model.Dentist;
 import com.dh.dentalClinicMVC.services.DentistService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -12,6 +13,7 @@ public class DentistController {
 
     private DentistService dentistService;
 
+    @Autowired
     public DentistController(DentistService dentistService) {
         this.dentistService = dentistService;
     }

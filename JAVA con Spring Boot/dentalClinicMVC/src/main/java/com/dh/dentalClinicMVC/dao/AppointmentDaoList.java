@@ -1,10 +1,13 @@
 package com.dh.dentalClinicMVC.dao;
 
 import com.dh.dentalClinicMVC.model.Appointment;
+import org.hibernate.annotations.Comment;
+import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@Component
 public class AppointmentDaoList implements IDao<Appointment> {
 
     private List<Appointment> appointments;

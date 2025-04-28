@@ -2,6 +2,7 @@ package com.dh.dentalClinicMVC.controller;
 
 import com.dh.dentalClinicMVC.model.Patient;
 import com.dh.dentalClinicMVC.services.PatientService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -12,6 +13,7 @@ public class PatientController {
 
     private PatientService patientService;
 
+    @Autowired
     public PatientController(PatientService patientService) {
         this.patientService = patientService;
     }
@@ -43,6 +45,6 @@ public class PatientController {
     // Endpoint que nos permite devolver todos los pacientes
     @GetMapping
     public List<Patient> findAll() {
-        return patientService.getPatientIDao().findAll();
+        return patientService.findAll();
     }
 }
